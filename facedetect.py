@@ -112,9 +112,9 @@ class FaceDetect(Preview):
             sc = [] 
             for c in contour:
                 # Map MLKit coordinates to Kivy screen coordinates
-                y = self.image_size[1] - c.y 
+                y = max(self.image_size[1] - c.y, 0) 
                 if self.mirror:
-                    x = self.image_size[0] -c.x 
+                    x = max(self.image_size[0] - c.x, 0) 
                 else:
                     x = c.x
                 # Map MKKit analysis coordinates to Preview screen coordinates
@@ -133,9 +133,6 @@ class FaceDetect(Preview):
     ################################
         
     def canvas_instructions_callback(self, texture, size, pos):
-        # Add the preview image 
-        Color(1,1,1,1)
-        Rectangle(texture= texture, size = size, pos = pos)
         # Add the analysis annotations
         Color(1,0,0,1)
         face = True # FACE is first in the list above, and is a closed line
