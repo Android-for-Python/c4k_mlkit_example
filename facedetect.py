@@ -132,7 +132,7 @@ class FaceDetect(Preview):
     # Canvas Update  - on UI Thread
     ################################
         
-    def canvas_instructions_callback(self, texture, size, pos):
+    def canvas_instructions_callback(self, texture, tex_size, tex_pos):
         # Add the analysis annotations
         Color(1,0,0,1)
         face = True # FACE is first in the list above, and is a closed line
