@@ -187,7 +187,7 @@ android.add_src = mlkit_src
 #android.add_assets =
 
 # (list) Gradle dependencies to add
-android.gradle_dependencies = "com.google.mlkit:face-detection:16.0.6"
+android.gradle_dependencies = com.google.mlkit:face-detection:16.0.6
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
