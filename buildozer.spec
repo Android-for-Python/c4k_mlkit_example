@@ -99,7 +99,7 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 32
+android.api = 33
 
 # (int) Minimum API your APK will support.
 #android.minapi = 21
@@ -187,7 +187,7 @@ android.add_src = mlkit_src
 #android.add_assets =
 
 # (list) Gradle dependencies to add
-android.gradle_dependencies = com.google.mlkit:face-detection:16.0.6
+android.gradle_dependencies = com.google.mlkit:face-detection:16.1.5
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.

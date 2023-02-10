@@ -126,7 +126,11 @@ class FaceDetect(Preview):
 
     @mainthread
     def make_thread_safe(self, contours):
-        self.contours = contours
+        if self.camera_connected:
+            self.contours = contours
+        else:
+            # Clear local state so no thread related ghosts on re-connect
+            self.contours = []
 
     ################################
     # Canvas Update  - on UI Thread
