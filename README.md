@@ -3,6 +3,8 @@ Camera4Kivy MLKit Example
 
 *MLKit Image Analysis using Camera4Kivy*
 
+**2023-11-13 This repository is archived.**
+
 # Overview
 
 Uses MLKit to detect to detect face, eyes, mouth.
